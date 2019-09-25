@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41704acd95953b4449742e2eae268047, type: 3}
+  m_Name: DesignData
+  m_EditorClassIdentifier: 
+  minLevelFavor: 50
+  addFavorPerLevel: 5
+  maxHealthPoint: 120
+  maxMoodPoint: 100
+  maxBellyPoint: 100
+  maxSleepingPoint: 100
+  sleepingDuration: 28800
+  workStyleArray:
+  - workStyleNum: 0
+    consumeHP: 10
+    minCoins: 50
+    maxCoins: 90
+    maxLevel: 30
+  - workStyleNum: 0
+    consumeHP: 15
+    minCoins: 120
+    maxCoins: 180
+    maxLevel: 60
+  - workStyleNum: 0
+    consumeHP: 20
+    minCoins: 200
+    maxCoins: 300
+    maxLevel: 120
+  - workStyleNum: 0
+    consumeHP: 30
+    minCoins: 345
+    maxCoins: 570
+    maxLevel: 200
+  dateStyleArray:
+  - dateStyleNum: 0
+    consumeCoins: 20
+    coldDownTime: 60
+    addFavorPoint: 4
+  - dateStyleNum: 0
+    consumeCoins: 150
+    coldDownTime: 1800
+    addFavorPoint: 18
+  - dateStyleNum: 0
+    consumeCoins: 800
+    coldDownTime: 7200
+    addFavorPoint: 64
+  - dateStyleNum: 0
+    consumeCoins: 1800
+    coldDownTime: 28800
+    addFavorPoint: 90
+  playStyleArray:
+  - playStyleNum: 0
+    consumeHP: 10
+    coldDownTime: 900
+    addMoodPoint: 2
+  - playStyleNum: 0
+    consumeHP: 20
+    coldDownTime: 3600
+    addMoodPoint: 6
+  feedStyleArray:
+  - feedStyleNum: 0
+    isConsumeDiamonds: 0
+    consumeDiamonds: 0
+    consumeCoins: 50
+    addBellyPoint: 10
+    addFavorPoint: 0
+  - feedStyleNum: 0
+    isConsumeDiamonds: 0
+    consumeDiamonds: 0
+    consumeCoins: 150
+    addBellyPoint: 60
+    addFavorPoint: 0
+  - feedStyleNum: 0
+    isConsumeDiamonds: 1
+    consumeDiamonds: 10
+    consumeCoins: 0
+    addBellyPoint: 20
+    addFavorPoint: 5
