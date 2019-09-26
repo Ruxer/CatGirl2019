@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 1790687933
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c637062043426a9c762e30b04c67eb6d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9533ec91352ac8573a011616e38420f1
+HashAppended: 0
+ClassTypes:
+- Class: 329
+  Script: {instanceID: 0}
+Assets:
+- Assets/Media/movies/movie1/onBody.mp4
+- Assets/Media/movies/movie1/onHead.mp4
+- Assets/Media/movies/movie1/idle.mp4
+Dependencies: []

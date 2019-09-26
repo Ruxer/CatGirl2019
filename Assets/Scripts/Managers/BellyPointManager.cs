@@ -11,7 +11,7 @@ public class BellyPointManager : MonoBehaviour {
 
     private PlayerDataUtils playerDataUtils;//定义工具类
 
-    private readonly float timePerBellyCoroutinesChange = 5f;//饱食度的变化阈值
+    private readonly float timePerBellyCoroutinesChange = 3600f;//饱食度的变化阈值
    
 
     //定义委托类型，确定回调方法原型

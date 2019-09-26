@@ -1,0 +1,6 @@
+
+在编辑器菜单栏,选择AssetBundle/Package With BuildMap 菜单打包
+
+assetBundle文件目录: 打包后的文件放在StreamingAssets文件夹中.
+
+

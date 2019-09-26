@@ -11,7 +11,7 @@ public class MoodPointManager : MonoBehaviour {
     //饱食管理器对象
     private BellyPointManager BellyManager;
 
-    private readonly float timePerMoodCoroutineChange = 5f;//每次心情协程变化的时间
+    private readonly float timePerMoodCoroutineChange = 3600f;//每次心情协程变化的时间
 
    // private float reduceMoodPointPerHour = 1f;//心情低于33时，每小时降低1点心情
     private readonly float maxReduceMoodPoint = 5f;//心情低于33时，最多降低5点心情

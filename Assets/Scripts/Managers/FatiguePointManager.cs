@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class FatiguePointManager : MonoBehaviour {
 
+    private readonly float timePerFatigueCoroutinesChange = 3600f;//疲劳度的变化阈值
+
 
     private PlayerDataUtils playerDataUtils;//定义工具类
 
@@ -42,7 +44,7 @@ public class FatiguePointManager : MonoBehaviour {
         while (true)
         {
 
-            yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(timePerFatigueCoroutinesChange);
 
 
             currentFatigueState = playerDataUtils.ReduceFatiguePoint();

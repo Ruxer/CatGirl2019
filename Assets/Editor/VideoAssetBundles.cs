@@ -7,13 +7,14 @@
 using System.IO;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Networking;
 
 /// <summary>
 /// 打包AssetBundle脚本
 /// </summary>
 public class VideoAssetBundles {
 
-    //创建编辑器菜单
+    //创建编辑器打包菜单
     [MenuItem("AssetBundle/Package With BuildMap")]
     private static void CreateAssetBundleMain()
     {
@@ -29,17 +30,17 @@ public class VideoAssetBundles {
         //指定资源打包名称
         buildMap[0].assetBundleName = "movieClipsbundle";
 
-        //
-        string[] movieAssets = new string[4];
-        movieAssets[0] = "Assets/Resources/Movies/movie0/idle.mp4";
-        movieAssets[1] = "Assets/Resources/Movies/movie1/idle.mp4";
-        movieAssets[2] = "Assets/Resources/Movies/movie2/idle.mp4";
-        movieAssets[3] = "Assets/Resources/Movies/movie3/idle.mp4";
+        //将多个文件打包到一个资源包中.
+        string[] movieAssets = new string[3];
+        movieAssets[0] = "Assets/Media/movies/movie1/idle.mp4";
+        movieAssets[1] = "Assets/Media/movies/movie1/onBody.mp4";
+        movieAssets[2] = "Assets/Media/movies/movie1/onHead.mp4";
+        //movieAssets[3] = "Assets/Media/movies/movie3/idle.mp4";
 
         //在buildMap[0]下的包中打包多个资源.
         buildMap[0].assetNames = movieAssets;
 
-
+       
 
         //创建文件窗口,根据选择返回路径.
         string packagePath = UnityEditor.EditorUtility.OpenFolderPanel("选择打包路径", "streamingAssets", "");
@@ -57,7 +58,9 @@ public class VideoAssetBundles {
 
         AssetDatabase.Refresh();
 
-        Debug.Log("PackageSuccessful!");
+        Debug.Log("Package Successful!");
+
+      
 
     }
 

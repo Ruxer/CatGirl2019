@@ -11,6 +11,8 @@ TagManager:
   - FatiguePointPrograssbar
   - MoodPointPrograssbar
   - BellyPointPrograssbar
+  - UICamera
+  - MovieCamera
   layers:
   - Default
   - TransparentFX
@@ -21,7 +23,7 @@ TagManager:
   - 
   - 
   - movie
-  - 
+  - HUI
   - 
   - 
   - 
@@ -47,4 +49,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: backMovie
+    uniqueID: 3986722139
+    locked: 0
+  - name: forwardUI
+    uniqueID: 3477506637
     locked: 0
